@@ -388,6 +388,20 @@ assortment
 .mailing-list__checkbox {
   margin: 0;
 }
+/* prioritise */
+.prioritise {
+  margin-bottom: 120px;
+}
+.prioritise__list {
+  display: flex;
+  gap: 31px 0;
+  max-width: 757px;
+  margin: 0 auto;
+}
+.prioritise__item {
+  flex-basis: auto;
+}
+
 @media (max-width: 860px) {
   .menu {
     order: -1;
