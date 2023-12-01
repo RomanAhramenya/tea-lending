@@ -261,10 +261,6 @@ assortment
   justify-content: space-between;
   column-gap: 10px;
 }
-.mailing-list__checkbox {
-}
-.mailing-list__checkbox-style {
-}
 .mailing-list__checkbox__text {
   font-size: 13px;
 }
@@ -489,6 +485,22 @@ assortment
     width: 33%;
   }
 }
+@media (max-width: 970px) {
+  .main-blog__list {
+    gap: 30px 0;
+    flex-direction: column;
+  }
+  .main-blog__item {
+    flex-basis: auto;
+    max-width: 542px;
+  }
+  .main-blog__item:nth-child(2n + 1) {
+    margin-left: 64px;
+  }
+  .main-blog__item:nth-child(2n) {
+    margin-left: 162px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     max-width: 896px;
@@ -532,23 +544,32 @@ assortment
   }
   /* main-blog */
 
-  .main-blog__list {
-    gap: 30px 0;
-    flex-direction: column;
-  }
-  .main-blog__item {
-    flex-basis: auto;
-    max-width: 542px;
-  }
-  .main-blog__item:nth-child(2n + 1) {
-    margin-left: 64px;
-  }
-  .main-blog__item:nth-child(2n) {
-    margin-left: 162px;
-  }
   .main-blog__item-img {
     width: 270px;
     height: 180px;
+  }
+  /* mailing-list */
+
+  .mailing-list__inner {
+    max-width: 100%;
+  }
+  .mailing-list__text {
+    text-align: center;
+  }
+  .mailing-list__form {
+    max-width: 100%;
+  }
+  .mailing-list__email {
+    width: 100%;
+  }
+  /* prioritise */
+
+  .prioritise__list {
+    gap: 0;
+    max-width: 638px;
+  }
+  .prioritise__item {
+    flex-basis: 50%;
   }
 }
 @media (max-width: 680px) {
@@ -568,6 +589,22 @@ assortment
     font-size: 16px;
     max-width: 376px;
     padding: 60px 0;
+  }
+  .reviews {
+    padding: 60px 0;
+  }
+  .main-blog__item:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+  .main-blog__item:nth-child(2n) {
+    margin-left: 0;
+  }
+  .prioritise__list {
+    max-width: 100%;
+    row-gap: 50px;
+  }
+  .prioritise__item {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -607,32 +644,73 @@ assortment
   .reviews__item {
     flex-basis: 47%;
   }
-  .reviews__text {
-  }
-  .reviews__name {
-  }
   /* main-blog */
   .main-blog {
-  }
-  .container {
-  }
-  .main-blog__title {
+    margin-bottom: 60px;
   }
   .main-blog__list {
+    display: block;
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
   }
   .main-blog__item {
+    display: block;
+  }
+  .main-blog__item:first-child {
+    margin-bottom: 30px;
+  }
+  .main-blog__item:not(:nth-child(-n + 2)) {
+    display: none;
   }
   .main-blog__item-img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    margin: 10px auto;
   }
   .main-blog__item-content {
+    display: block;
   }
   .main-blog__item-title {
+    min-height: auto;
+    margin-bottom: 5px;
   }
   .main-blog__item-author {
+    display: block;
+    margin-bottom: 10px;
   }
   .main-blog__item-link {
+    display: block;
   }
-  .main-blog__link {
+  .main-blog__item-img {
+    width: 230px;
+    height: 153px;
+  }
+  /* mailing-list */
+  .mailing-list {
+    padding: 50px 0;
+    margin-bottom: 60px;
+  }
+
+  .mailing-list__title {
+    margin-bottom: 30px;
+  }
+  .mailing-list__inner {
+    max-width: 100%;
+  }
+  .mailing-list__text {
+    font-size: 13px;
+    margin-bottom: 48px;
+  }
+
+  /* prioritise */
+  .prioritise {
+    margin-bottom: 60px;
+  }
+  .prioritise__title {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 360px) {
@@ -680,25 +758,46 @@ assortment
   }
   /* main-blog */
   .main-blog {
+    margin-bottom: 50px;
   }
-  .container {
-  }
+
   .main-blog__title {
+    font-size: 24px;
   }
-  .main-blog__list {
+  /* mailing-list */
+
+  .mailing-list__title {
+    font-size: 24px;
   }
-  .main-blog__item {
+
+  .mailing-list__text {
+    margin-bottom: 30px;
   }
-  .main-blog__item-img {
+
+  .mailing-list__form__top {
+    margin-bottom: 15px;
   }
-  .main-blog__item-content {
+  .mailing-list__email {
+    margin-right: 19px;
   }
-  .main-blog__item-title {
+
+  /* prioritise */
+  .prioritise {
+    margin-bottom: 50px;
   }
-  .main-blog__item-author {
+  .prioritise__title {
+    font-size: 24px;
   }
-  .main-blog__item-link {
+  .prioritise__list {
+    row-gap: 40px;
   }
-  .main-blog__link {
+  .prioritise__item {
+    height: 128px;
+  }
+  .prioritise__item-title {
+    font-size: 20px;
+  }
+  .prioritise__item-text {
+    font-size: 10px;
   }
 }
