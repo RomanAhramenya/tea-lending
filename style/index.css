@@ -531,27 +531,24 @@ assortment
     display: block;
   }
   /* main-blog */
-  .main-blog {
-  }
-  .container {
-  }
-  .main-blog__title {
-  }
+
   .main-blog__list {
+    gap: 30px 0;
+    flex-direction: column;
   }
   .main-blog__item {
+    flex-basis: auto;
+    max-width: 542px;
+  }
+  .main-blog__item:nth-child(2n + 1) {
+    margin-left: 64px;
+  }
+  .main-blog__item:nth-child(2n) {
+    margin-left: 162px;
   }
   .main-blog__item-img {
-  }
-  .main-blog__item-content {
-  }
-  .main-blog__item-title {
-  }
-  .main-blog__item-author {
-  }
-  .main-blog__item-link {
-  }
-  .main-blog__link {
+    width: 270px;
+    height: 180px;
   }
 }
 @media (max-width: 680px) {
